@@ -91,6 +91,13 @@ document.querySelectorAll('.js-add-to-cart')
     });
 
      }
-    console.log(cart);
+
+     cart.forEach((item)=>
+     {
+        cartQuantity +=item.quantity;
+     });
+     
+     
+     console.log(cart);
   });
 });
